@@ -1,4 +1,4 @@
-const assetBase = "https://raw.githubusercontent.com/NinhaMachadoDub/Samples/main";
+const assetBase = "assets";
 
 const education = [
   {

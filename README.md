@@ -30,11 +30,15 @@ assets/optional/
 
 ## Assets
 
-As imagens e áudios são carregados do repositório:
+As imagens e áudios ficam dentro da pasta:
 
 ```text
-https://github.com/NinhaMachadoDub/Samples
+assets/
 ```
+
+Use `assets/Banners` para banners, `assets/Thumbs` para capas dos samples,
+`assets/Audios` para arquivos de voz e `assets/Trabalhos` para imagens dos
+trabalhos realizados.
 
 ## Publicação
 
