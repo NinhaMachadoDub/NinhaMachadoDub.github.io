@@ -68,12 +68,15 @@ button {
 
 .hero {
   width: 100%;
+  overflow: hidden;
   background: var(--bg-main);
 }
 
 .hero__image {
   width: 100%;
-  height: auto;
+  height: clamp(330px, 40vw, 620px);
+  object-fit: cover;
+  object-position: center;
 }
 
 .site-container {
@@ -466,7 +469,7 @@ h3 {
   .intro-grid {
     grid-template-columns: minmax(0, 1.25fr) minmax(420px, 0.78fr);
     align-items: start;
-    gap: clamp(80px, 9vw, 170px);
+    gap: clamp(46px, 5vw, 92px);
   }
 
   .about .section-heading {
