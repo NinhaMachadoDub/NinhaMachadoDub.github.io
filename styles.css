@@ -67,9 +67,21 @@ button {
 }
 
 .hero {
+  position: relative;
   width: 100%;
   overflow: hidden;
   background: var(--bg-main);
+}
+
+.hero::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: clamp(70px, 10vw, 160px);
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgb(18 11 27 / 0), var(--bg-main) 88%);
 }
 
 .hero__image {
