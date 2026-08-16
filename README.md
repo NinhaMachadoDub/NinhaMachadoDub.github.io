@@ -26,7 +26,7 @@ assets/optional/
 - Trabalhos realizados: edite o array `works` em `script.js`.
 - Formação, formações artísticas e idiomas: edite os arrays correspondentes em `script.js`.
 - Contato: edite o objeto `contact` em `script.js`.
-- Foto histórica opcional: adicione `assets/optional/foto-dublagem-antiga.jpg`.
+- Foto histórica opcional: edite ou substitua `assets/optional/FotoDublagemAntiga.png`.
 
 ## Assets
 
