@@ -110,7 +110,7 @@ const works = [
 
 const contact = {
   phoneDisplay: "(21) 99355-6691",
-  phoneHref: "+5521993556691",
+  phoneHref: "https://wa.me/5521993556691",
   email: "AnaCarolinapcm@gmail.com",
   location: "Rio de Janeiro • RJ",
 };
@@ -251,7 +251,7 @@ function renderContact() {
     {
       label: "Telefone",
       value: contact.phoneDisplay,
-      href: contact.phoneHref ? `tel:${contact.phoneHref}` : "",
+      href: contact.phoneHref,
       icon: "phone",
     },
     {
