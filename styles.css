@@ -467,9 +467,9 @@ h3 {
   }
 
   .intro-grid {
-    grid-template-columns: minmax(0, 1.25fr) minmax(420px, 0.78fr);
+    grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.72fr);
     align-items: start;
-    gap: clamp(46px, 5vw, 92px);
+    gap: clamp(28px, 3vw, 56px);
   }
 
   .about .section-heading {
@@ -561,7 +561,7 @@ h3 {
 
 @media (min-width: 1800px) {
   .site-container {
-    width: min(1980px, calc(100% - 560px));
+    width: min(1500px, calc(100% - 360px));
   }
 }
 
