@@ -27,7 +27,7 @@ body {
   color: var(--text-primary);
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 1.55;
 }
 
 img,
@@ -82,13 +82,13 @@ button {
 }
 
 .section {
-  padding-block: clamp(32px, 6vw, 72px);
+  padding-block: clamp(38px, 7vw, 92px);
 }
 
 .intro-grid {
   display: grid;
   gap: 28px;
-  padding-top: clamp(34px, 5vw, 72px);
+  padding-top: clamp(38px, 6vw, 86px);
 }
 
 .intro-grid > .section,
@@ -98,7 +98,7 @@ button {
 
 .profile-stack {
   display: grid;
-  gap: 20px;
+  gap: 34px;
 }
 
 .section-heading {
@@ -109,16 +109,12 @@ button {
 }
 
 .section-heading.centered {
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .heading-mark {
-  width: 26px;
-  height: 2px;
-  flex: 0 0 auto;
-  border-radius: 999px;
-  background: var(--pink);
+  display: none;
 }
 
 .icon {
@@ -144,19 +140,25 @@ h3 {
   font-family: Lato, Arial, sans-serif;
   line-height: 1.15;
   letter-spacing: 0;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 h2 {
-  font-size: clamp(1.45rem, 4.8vw, 2rem);
+  color: var(--pink);
+  font-size: clamp(1.85rem, 5vw, 2.25rem);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 1rem;
+  font-weight: 700;
 }
 
 .copy {
-  color: var(--text-secondary);
+  color: var(--text-primary);
+  font-size: 1.02rem;
+  font-weight: 700;
 }
 
 .copy p {
@@ -168,10 +170,10 @@ h3 {
 }
 
 .historic-photo {
-  margin: 24px 0 0;
+  margin: 28px 0 0;
   overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: 0;
+  border-radius: 0;
 }
 
 .historic-photo img {
@@ -181,7 +183,6 @@ h3 {
 
 .compact-section,
 .contact-card,
-.mini-card,
 .sample-card,
 .work-card {
   border: 1px solid var(--border);
@@ -190,29 +191,30 @@ h3 {
 }
 
 .compact-section {
-  padding: 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .mini-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px;
+  gap: 18px 34px;
 }
 
 .mini-card {
-  padding: 14px;
-  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+  padding: 0;
 }
 
 .mini-card p {
-  margin: 5px 0 0;
+  margin: 4px 0 0;
   color: var(--text-secondary);
-  line-height: 1.45;
+  line-height: 1.35;
 }
 
 .mini-card .note {
-  color: var(--pink-light);
-  font-weight: 700;
+  color: var(--text-secondary);
+  font-weight: 400;
 }
 
 .feature-section {
@@ -220,10 +222,12 @@ h3 {
 }
 
 .section-subtitle {
-  max-width: 520px;
-  margin: -8px auto 22px;
-  color: var(--text-secondary);
-  text-align: center;
+  max-width: none;
+  margin: 0 0 28px;
+  color: var(--text-primary);
+  font-size: 1.08rem;
+  font-weight: 700;
+  text-align: left;
 }
 
 .snap-row {
@@ -243,23 +247,23 @@ h3 {
 
 .sample-card,
 .work-card {
-  flex: 0 0 min(78vw, 230px);
+  flex: 0 0 min(72vw, 215px);
   overflow: hidden;
   scroll-snap-align: start;
   transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
 }
 
 .sample-card {
-  padding: 12px 12px 18px;
+  padding: 0;
   text-align: center;
 }
 
 .sample-media {
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 8px 8px 0 0;
   background: #21152c;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1.33 / 1;
 }
 
 .sample-media img {
@@ -272,13 +276,13 @@ h3 {
   position: absolute;
   inset: 50% auto auto 50%;
   display: grid;
-  width: 58px;
-  height: 58px;
+  width: 52px;
+  height: 52px;
   padding: 0;
   place-items: center;
   border: 1px solid rgb(243 234 241 / 64%);
   border-radius: 50%;
-  background: rgb(18 11 27 / 78%);
+  background: rgb(213 110 152 / 82%);
   color: var(--text-primary);
   cursor: pointer;
   transform: translate(-50%, -50%);
@@ -286,17 +290,19 @@ h3 {
 }
 
 .play-button svg {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 
 .sample-title {
-  margin-top: 14px;
+  margin: 0;
+  padding: 14px 10px 16px;
+  color: var(--text-secondary);
 }
 
 .work-card {
-  flex-basis: min(82vw, 250px);
+  flex-basis: min(82vw, 230px);
 }
 
 .work-image {
@@ -313,13 +319,13 @@ h3 {
 }
 
 .work-content {
-  padding: 14px;
+  padding: 12px 12px 16px;
 }
 
 .eyebrow {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: var(--pink-light);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 700;
   line-height: 1.35;
   text-transform: uppercase;
@@ -331,9 +337,9 @@ h3 {
 
 .role,
 .meta {
-  margin: 8px 0 0;
+  margin: 5px 0 0;
   color: var(--text-secondary);
-  line-height: 1.45;
+  line-height: 1.35;
 }
 
 .meta {
@@ -342,15 +348,15 @@ h3 {
 
 .contact-grid {
   display: grid;
-  gap: 14px;
+  gap: 18px;
 }
 
 .contact-card {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
   min-width: 0;
-  padding: 18px;
+  padding: 24px;
   text-decoration: none;
   transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
 }
@@ -361,9 +367,9 @@ h3 {
 }
 
 .contact-icon {
-  width: 34px;
-  height: 34px;
-  flex: 0 0 34px;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
   color: var(--pink);
 }
 
@@ -379,21 +385,20 @@ h3 {
 
 .contact-label {
   display: block;
-  color: var(--text-muted);
-  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-size: 1rem;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .contact-value {
   display: block;
   overflow-wrap: anywhere;
-  color: var(--text-primary);
-  font-weight: 700;
+  color: var(--text-secondary);
+  font-weight: 400;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .mini-card:hover,
   .sample-card:hover,
   .work-card:hover,
   .contact-card[href]:hover {
@@ -454,10 +459,114 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+  .site-container {
+    width: min(1540px, calc(100% - 120px));
+  }
+
   .intro-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(390px, 0.82fr);
+    grid-template-columns: minmax(0, 1.25fr) minmax(420px, 0.78fr);
     align-items: start;
-    gap: 34px;
+    gap: clamp(80px, 9vw, 170px);
+  }
+
+  .about .section-heading {
+    margin-bottom: 54px;
+  }
+
+  .copy {
+    max-width: 980px;
+    font-size: clamp(1.05rem, 1.05vw, 1.24rem);
+    line-height: 1.48;
+  }
+
+  .copy p + p {
+    margin-top: 22px;
+  }
+
+  .historic-photo {
+    max-width: 960px;
+    margin-top: 32px;
+  }
+
+  .profile-stack {
+    padding-top: 24px;
+    gap: 40px;
+  }
+
+  .profile-stack .section-heading {
+    align-items: flex-start;
+    gap: 22px;
+    margin-bottom: 18px;
+  }
+
+  .profile-stack h2 {
+    color: var(--text-primary);
+    font-size: clamp(1.25rem, 1.35vw, 1.5rem);
+  }
+
+  .profile-stack h3 {
+    color: var(--text-primary);
+    font-size: 0.98rem;
+    text-transform: none;
+  }
+
+  .profile-stack .icon {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .profile-stack .mini-grid {
+    padding-left: 60px;
+  }
+
+  .section {
+    padding-block: 78px;
+  }
+
+  .feature-section {
+    padding-block: 64px 86px;
+  }
+
+  .feature-section .section-heading {
+    margin-bottom: 32px;
+  }
+
+  .feature-section h2 {
+    font-size: clamp(2rem, 2.1vw, 2.45rem);
+    font-weight: 500;
+  }
+
+  .sample-row {
+    padding-top: 0;
+  }
+
+  .works-row {
+    padding-top: 8px;
+  }
+
+  .contact-section {
+    padding-block: 54px 72px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .site-container {
+    width: min(1280px, calc(100% - 120px));
+  }
+
+  .sample-row {
+    justify-content: flex-end;
+  }
+
+  .works-row {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1800px) {
+  .site-container {
+    width: min(1980px, calc(100% - 560px));
   }
 }
 

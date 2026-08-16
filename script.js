@@ -23,7 +23,7 @@ const education = [
 const artisticEducation = [
   {
     title: "Ballet e Jazz",
-    detail: "2002–2014",
+    detail: "2002–2023",
   },
   {
     title: "Canto e Técnica Vocal",
@@ -109,9 +109,9 @@ const works = [
 ];
 
 const contact = {
-  phoneDisplay: "(21) XXXXX-XXXX",
-  phoneHref: "",
-  email: "EMAIL_A_CONFIRMAR",
+  phoneDisplay: "(21) 99355-6691",
+  phoneHref: "+5521993556691",
+  email: "AnaCarolinapcm@gmail.com",
   location: "Rio de Janeiro • RJ",
 };
 
