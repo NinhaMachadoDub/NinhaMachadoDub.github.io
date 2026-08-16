@@ -521,6 +521,30 @@ h3 {
     padding-left: 60px;
   }
 
+  .profile-stack .mini-card {
+    position: relative;
+  }
+
+  .profile-stack .mini-card:nth-child(even)::before {
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: -17px;
+    width: 1px;
+    content: "";
+    background: rgb(231 137 169 / 28%);
+  }
+
+  .artistic-grid .mini-card + .mini-card::before {
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: -17px;
+    width: 1px;
+    content: "";
+    background: rgb(231 137 169 / 28%);
+  }
+
   .section {
     padding-block: 78px;
   }
