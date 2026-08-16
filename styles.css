@@ -199,7 +199,7 @@ h3 {
 .mini-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px 34px;
+  gap: 18px 24px;
 }
 
 .mini-card {
@@ -529,7 +529,7 @@ h3 {
     position: absolute;
     top: 3px;
     bottom: 3px;
-    left: -17px;
+    left: -12px;
     width: 1px;
     content: "";
     background: rgb(231 137 169 / 28%);
@@ -539,7 +539,7 @@ h3 {
     position: absolute;
     top: 3px;
     bottom: 3px;
-    left: -17px;
+    left: -12px;
     width: 1px;
     content: "";
     background: rgb(231 137 169 / 28%);
