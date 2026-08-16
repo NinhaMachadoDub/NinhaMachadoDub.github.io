@@ -193,6 +193,17 @@ h3 {
   height: auto;
 }
 
+.reveal.is-armed {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 620ms ease, transform 620ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .compact-section,
 .contact-card,
 .sample-card,
@@ -610,5 +621,11 @@ h3 {
     scroll-behavior: auto !important;
     transition: none !important;
     animation: none !important;
+  }
+
+  .reveal,
+  .reveal.is-armed {
+    opacity: 1;
+    transform: none;
   }
 }
