@@ -125,7 +125,7 @@ button {
   height: 42px;
   flex: 0 0 42px;
   color: var(--pink);
-  transform: translateY(-4px);
+  transform: translateY(-10px);
 }
 
 .icon img {
@@ -514,7 +514,7 @@ h3 {
     width: 52px;
     height: 52px;
     flex-basis: 52px;
-    transform: translateY(-6px);
+    transform: translateY(-16px);
   }
 
   .profile-stack .mini-grid {
