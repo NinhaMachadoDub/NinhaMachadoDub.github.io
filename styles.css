@@ -554,14 +554,6 @@ h3 {
   .site-container {
     width: min(1280px, calc(100% - 120px));
   }
-
-  .sample-row {
-    justify-content: flex-end;
-  }
-
-  .works-row {
-    justify-content: flex-end;
-  }
 }
 
 @media (min-width: 1800px) {
