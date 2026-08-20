@@ -45,5 +45,5 @@ trabalhos realizados.
 URL esperada no GitHub Pages:
 
 ```text
-https://ninhamachadodub.github.io/
+https://ninhamachado.com.br/
 ```
