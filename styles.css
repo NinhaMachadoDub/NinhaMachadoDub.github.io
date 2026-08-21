@@ -524,6 +524,12 @@ h3 {
     right: -18px;
   }
 
+  @media (hover: none), (pointer: coarse) {
+    .carousel-control {
+      display: none;
+    }
+  }
+
   .sample-card {
     flex: 0 0 215px;
   }
