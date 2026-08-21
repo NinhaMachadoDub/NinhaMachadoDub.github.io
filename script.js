@@ -58,22 +58,42 @@ const samples = [
   {
     title: "Ação",
     thumb: `${assetBase}/Thumbs/Thumb_Rosa.png`,
-    audio: `${assetBase}/Audios/acao.WAV`,
+    audio: `${assetBase}/Audios/Acao.wav`,
   },
   {
     title: "Animação",
     thumb: `${assetBase}/Thumbs/Thumb_Rosa.png`,
-    audio: `${assetBase}/Audios/animacao.WAV`,
+    audio: `${assetBase}/Audios/Animacao.wav`,
   },
   {
-    title: "Drama",
+    title: "Aventura",
     thumb: `${assetBase}/Thumbs/Thumb_Rosa.png`,
-    audio: `${assetBase}/Audios/drama.WAV`,
+    audio: `${assetBase}/Audios/Aventura.wav`,
   },
   {
-    title: "Infantil",
+    title: "Drama 1",
     thumb: `${assetBase}/Thumbs/Thumb_Rosa.png`,
-    audio: `${assetBase}/Audios/infantil.WAV`,
+    audio: `${assetBase}/Audios/Drama%201.wav`,
+  },
+  {
+    title: "Drama 2",
+    thumb: `${assetBase}/Thumbs/Thumb_Rosa.png`,
+    audio: `${assetBase}/Audios/Drama%202.wav`,
+  },
+  {
+    title: "Irônico",
+    thumb: `${assetBase}/Thumbs/Thumb_Rosa.png`,
+    audio: `${assetBase}/Audios/Ironico.wav`,
+  },
+  {
+    title: "Menino",
+    thumb: `${assetBase}/Thumbs/Thumb_Rosa.png`,
+    audio: `${assetBase}/Audios/Menino.wav`,
+  },
+  {
+    title: "Tutorial",
+    thumb: `${assetBase}/Thumbs/Thumb_Rosa.png`,
+    audio: `${assetBase}/Audios/Tutorial.WAV`,
   },
 ];
 
