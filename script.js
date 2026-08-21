@@ -225,6 +225,61 @@ function setupAudioPlayers() {
   });
 }
 
+function setupSampleCarousel() {
+  const shell = document.querySelector("[data-carousel]");
+  const list = shell?.querySelector(".sample-row");
+  const previousButton = shell?.querySelector("[data-carousel-prev]");
+  const nextButton = shell?.querySelector("[data-carousel-next]");
+
+  if (!shell || !list || !previousButton || !nextButton) return;
+
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const getScrollStep = () => {
+    const card = list.querySelector(".sample-card");
+    const gap = Number.parseFloat(window.getComputedStyle(list).columnGap) || 18;
+    return (card?.getBoundingClientRect().width || 215) + gap;
+  };
+
+  const scrollSamples = (direction) => {
+    list.scrollBy({
+      left: getScrollStep() * direction,
+      behavior: reducedMotion.matches ? "auto" : "smooth",
+    });
+  };
+
+  previousButton.addEventListener("click", () => scrollSamples(-1));
+  nextButton.addEventListener("click", () => scrollSamples(1));
+
+  let isDragging = false;
+  let startX = 0;
+  let startScrollLeft = 0;
+
+  list.addEventListener("pointerdown", (event) => {
+    if (event.pointerType === "touch" || event.button !== 0 || event.target.closest("button")) return;
+
+    isDragging = true;
+    startX = event.clientX;
+    startScrollLeft = list.scrollLeft;
+    list.classList.add("is-dragging");
+    list.setPointerCapture(event.pointerId);
+  });
+
+  list.addEventListener("pointermove", (event) => {
+    if (!isDragging) return;
+    list.scrollLeft = startScrollLeft - (event.clientX - startX);
+  });
+
+  list.addEventListener("pointerup", () => {
+    isDragging = false;
+    list.classList.remove("is-dragging");
+  });
+
+  list.addEventListener("pointercancel", () => {
+    isDragging = false;
+    list.classList.remove("is-dragging");
+  });
+}
+
 function renderWorks() {
   const list = document.getElementById("works-list");
 
@@ -343,5 +398,6 @@ renderSamples();
 renderWorks();
 renderContact();
 setupAudioPlayers();
+setupSampleCarousel();
 revealOptionalHistoricPhoto();
 setupRevealAnimations();

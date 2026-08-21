@@ -268,6 +268,23 @@ h3 {
   display: none;
 }
 
+.carousel-shell {
+  position: relative;
+}
+
+.carousel-control {
+  display: none;
+}
+
+.sample-row {
+  cursor: grab;
+}
+
+.sample-row.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+
 .sample-card,
 .work-card {
   flex: 0 0 min(72vw, 215px);
@@ -472,6 +489,39 @@ h3 {
     flex-wrap: nowrap;
     justify-content: flex-start;
     overflow-x: auto;
+  }
+
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border: 1px solid rgba(231, 137, 169, 0.7);
+    border-radius: 50%;
+    background: rgba(18, 11, 27, 0.86);
+    color: var(--pink-light);
+    font-size: 2rem;
+    line-height: 1;
+    transform: translateY(-50%);
+    transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+  }
+
+  .carousel-control:hover,
+  .carousel-control:focus-visible {
+    border-color: var(--pink);
+    background: rgba(29, 20, 39, 0.95);
+    color: var(--text-primary);
+  }
+
+  .carousel-control-prev {
+    left: -18px;
+  }
+
+  .carousel-control-next {
+    right: -18px;
   }
 
   .sample-card {
