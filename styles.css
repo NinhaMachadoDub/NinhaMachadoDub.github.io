@@ -468,8 +468,14 @@ h3 {
     overflow: visible;
   }
 
+  .sample-row {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
   .sample-card {
-    flex: 0 1 215px;
+    flex: 0 0 215px;
   }
 
   .work-card {
