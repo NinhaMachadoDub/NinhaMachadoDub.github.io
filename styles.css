@@ -517,11 +517,11 @@ h3 {
   }
 
   .carousel-control-prev {
-    left: -18px;
+    left: -64px;
   }
 
   .carousel-control-next {
-    right: -18px;
+    right: -64px;
   }
 
   @media (hover: none), (pointer: coarse) {
