@@ -71,12 +71,12 @@ const samples = [
     audio: `${assetBase}/Audios/Aventura.wav`,
   },
   {
-    title: "Drama 1",
+    title: "Drama I",
     thumb: `${assetBase}/Thumbs/Thumb_Rosa.png`,
     audio: `${assetBase}/Audios/Drama%201.wav`,
   },
   {
-    title: "Drama 2",
+    title: "Drama II",
     thumb: `${assetBase}/Thumbs/Thumb_Rosa.png`,
     audio: `${assetBase}/Audios/Drama%202.wav`,
   },
