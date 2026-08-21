@@ -131,7 +131,7 @@ const works = [
 const contact = {
   phoneDisplay: "(21) 99355-6691",
   phoneHref: "https://wa.me/5521993556691",
-  email: "AnaCarolinapcm@gmail.com",
+  email: "anacarolinapcm16@gmail.com",
   location: "Rio de Janeiro • RJ",
 };
 
