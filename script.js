@@ -1,4 +1,5 @@
 const assetBase = "assets";
+const showSamplesSection = false;
 
 const education = [
   {
@@ -165,6 +166,8 @@ function renderMiniCards(id, data) {
 }
 
 function renderSamples() {
+  if (!showSamplesSection) return;
+
   const list = document.getElementById("samples-list");
 
   samples.forEach((sample) => {
